@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Filling Form Exercise</title>
+</head>
+<body>
+    <h1>Good Vibes Form</h1>
+    <div class="form_sheet">
+        <h3>Tell us something positive that happened to you today.</h3>
+        <form action="results.html" method="GET">
+            <table>
+                <tr>
+                    <td class="form name">
+                        <label for="name">Name</label>
+                    </td>
+                    <td>
+                        <input type="text" id="name" name="name" size="35" placeholder="Enter your name" required>
+                    </td>
+                </tr>   
+                <tr>
+                    <td class="form mail">
+                        <label for="mail">E-mail</label>
+                    </td>
+                    <td>
+                        <input type="email" id="mail" name="mail" size="35" placeholder="Enter your email address" required>
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="form scale">
+                        <label for="scale">On a scale of 1-10, how good was it?</label>
+                    </td>
+                    <td>
+                        <input type="text" aria-colspan="" id="scale" name="scale" min="1" max="10" size="35" pattern="[0-9]{1,2}" placeholder="Enter a number between 1 and 10">
+                    </td>
+                </tr>   
+                <tr>
+                    <td class="form places">
+                        <label for="places">Where did it happened?</label>
+                    </td>
+                    <td>
+                        <select id="places" name="places">
+                            <option value="At home">At home</option>
+                            <option value="At work">At work</option>
+                            <option value="In park">in park</option>
+                            <option value="Others">others</option></select>
+                    </td>
+                </tr> 
+                <tr>
+                    <td>
+                        At what time of day did it happened?
+                    </td>
+                    <td class="form time">
+                        <input type="radio" name="time" id="morning" value="CSS">
+                        <label for="morning">Morning</label><br>
+                        <input type="radio" name="time" id="evening" value="CSS">
+                        <label for="afternoon">Afternoon</label><br>
+                        <input type="radio" name="time" id="afternoon" value="CSS">
+                        <label for="evening">Evening</label>
+                    </td>
+                </tr>     
+                <tr class="form emotions">
+                    <td>
+                        What emotions did you experienced?<br>(Select all that apply)
+                    </td>
+                    <td>
+                        <input type="checkbox" name="emotions" id="Excited" value="CSS">
+                        <label for="Excited">Excitedg</label><br>
+                        <input type="checkbox" name="emotions" id="Humbled" value="CSS">
+                        <label for="Humbled">Humbled</label><br>
+                        <input type="checkbox" name="emotions" id="Elated" value="CSS">
+                        <label for="Elated">Elated</label><br>
+                        <input type="checkbox" name="emotions" id="loved" value="CSS">
+                        <label for="loved">loved</label><br>
+                        <input type="checkbox" name="emotions" id="Enthusiastic" value="CSS">
+                        <label for="Enthusiastic">Enthusiastic</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="experience">Plesae describe your positive experience.</label>
+                    </td>
+                    <td>
+                        <textarea id="experience" name="experience" rows="3" cols="35" placeholder="Enter your experience here..."></textarea>
+                    </td> 
+                </tr>                 
+            </table>
+            <button type="submit">Sumbit</button>
+        </form>
+    </div>   
+</body>
+</html>
